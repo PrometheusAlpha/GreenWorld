@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <nav>
+      <h1>Green world</h1>
+    </nav>
+    <div class="hero">
+      <h1>
+        <p
+          class="typewrite"
+          data-period="1000"
+          data-type='[ "Earth can not wait.", "Neither can we."]'
+        >
+          <span class="wrap"></span>
+        </p>
+      </h1>
+      <br />
+      <h2>Scroll down for more</h2>
+    </div>
+    <div class="compare">
+      <h2>What happened ?</h2>
+      <div class="container">
+        <div class="img background-img"></div>
+        <div class="img foreground-img"></div>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+          class="slider"
+          name="slider"
+          id="slider"
+          oninput="slide(event)"
+        />
+        <div class="slider-button" id="slider-button"></div>
+      </div>
+    </div>
+    <div class="action">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatum similique assumenda pariatur libero atque error ipsa, esse architecto porro saepe odio nulla. Odit minus in itaque nihil quos non.</div>
+    <script src="index.js"></script>
+  </body>
+</html>
