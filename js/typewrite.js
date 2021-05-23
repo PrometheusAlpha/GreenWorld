@@ -52,21 +52,3 @@ window.onload = function () {
     }
   }
 };
-
-let slide = (e) => {
-  const sliderPos = e.target.value;
-  document.getElementById(
-    "slider"
-  ).previousElementSibling.style.width = `${sliderPos}%`;
-  document.getElementById(
-    "slider-button"
-  ).style.left = `calc(${sliderPos}% - 18px)`;
-};
-
-// $("#slider").on("input change", (e) => {
-//   const sliderPos = e.target.value;
-//   // Update the width of the foreground image
-//   $(".foreground-img").css("width", `${sliderPos}%`);
-//   // Update the position of the slider button
-//   $(".slider-button").css("left", `calc(${sliderPos}% - 18px)`);
-// });

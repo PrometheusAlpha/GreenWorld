@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
-    <style></style>
+    <title>Green world</title>
   </head>
   <body>
     <nav>
@@ -34,7 +33,7 @@
           type="range"
           min="1"
           max="100"
-          value="50"
+          value="80"
           class="slider"
           name="slider"
           id="slider"
@@ -43,7 +42,17 @@
         <div class="slider-button" id="slider-button"></div>
       </div>
     </div>
-    <div class="action">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatum similique assumenda pariatur libero atque error ipsa, esse architecto porro saepe odio nulla. Odit minus in itaque nihil quos non.</div>
-    <script src="index.js"></script>
+    <div class="action"></div>
+    <script>
+      function loadScript(url) {
+        var head = document.getElementsByTagName("head")[0];
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = url;
+        head.appendChild(script);
+      }
+      loadScript("js/typewrite.js");
+      loadScript("js/compare.js");
+    </script>
   </body>
 </html>

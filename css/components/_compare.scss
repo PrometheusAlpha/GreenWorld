@@ -1,20 +1,17 @@
-html {
+*{
   box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
-}
 
-.compare{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50vh;
-    margin-bottom: 25vh;
-    h2{
-        font-size: 3rem;
-        font-weight: 600;
-    }
+.compare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50vh;
+  margin-bottom: 25vh;
+  h2 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
 }
 
 @mixin center() {
@@ -26,28 +23,29 @@ html {
 body {
   margin: 0;
   height: 100vh;
-//   @include center;
 }
 
 .container {
   position: relative;
-  width: 900px;
-  height: 600px;
+  width: 60vh;
+  height: 60vh;
   border: 2px solid white;
+
   .img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: 900px 100%;
   }
   .background-img {
-    background-image: url('../p1.jpg');
+    background-image: url("../p1.jpg");
+    background-size: cover;
   }
   .foreground-img {
-    background-image: url('../p2.jpg');
-    width: 50%;
+    background-size: cover;
+    background-image: url("../p2.jpg");
+    width: 80%;
   }
 
   .slider {
@@ -56,25 +54,25 @@ body {
     appearance: none;
     width: 100%;
     height: 100%;
-    background: rgba(#f2f2f2, .3);
+    background: rgba(#f2f2f2, 0.3);
     outline: none;
     margin: 0;
-    transition: all .2s;
+    transition: all 0.2s;
     @include center;
     &:hover {
-      background: rgba(#f2f2f2, .1);
+      background: rgba(#f2f2f2, 0);
     }
     &::-webkit-slider-thumb {
       -webkit-appearance: none;
       appearance: none;
       width: 6px;
-      height: 600px;
+      height: 60vh;
       background: white;
       cursor: pointer;
     }
     &::-moz-range-thumb {
       width: 6px;
-      height: 600px;
+      height: 60vw;
       background: white;
       cursor: pointer;
     }
@@ -88,15 +86,15 @@ body {
     height: $size;
     border-radius: 50%;
     background-color: white;
-    left: calc(50% - 18px);
+    left: calc(80% - 18px);
     top: calc(50% - 18px);
     @include center;
 
     @mixin arrow-helper() {
-      content: '';
+      content: "";
       padding: 3px;
       display: inline-block;
-      border: solid #5D5D5D;
+      border: solid #5d5d5d;
       border-width: 0 2px 2px 0;
     }
     &:after {
