@@ -1,20 +1,17 @@
 nav {
-  position: fixed;
-  z-index: 99;
-  top: 0;
   width: 100%;
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-          backdrop-filter: blur(20px) saturate(180%);
-  border-bottom: 1px solid white;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 nav h1 {
-  margin: 1rem;
-  font-size: 2rem;
+  margin: 1rem 3rem;
+  font-family: SVN-Dear Jane;
+  font-size: 3rem;
 }
 
-.hero {
-  margin-top: calc(50vh - 10rem);
+@font {}.hero {
+  height: 150vh;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,36 +19,38 @@ nav h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../Media/woods.jpg");
+  background-size: cover;
 }
 
 .hero h1 {
-  font-size: 6rem;
-  margin: 0;
   font-weight: 600;
 }
 
-.hero h2 {
-  font-weight: 400;
-}
-
-.hero .top {
-  font-size: 6rem;
-}
-
 .hero .typewrite {
+  margin: 0;
+  font-size: 6rem;
   min-height: 15rem;
 }
 
-.wrap {
+.cursor {
   border-right: 1px solid white;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.wood_border {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../Media/intro-bg-trees_large.svg);
 }
 
 .compare {
@@ -84,6 +83,7 @@ body {
   width: 60vh;
   height: 60vh;
   border: 2px solid white;
+  margin: 2rem 0;
 }
 
 .container .img {
@@ -95,13 +95,13 @@ body {
 }
 
 .container .background-img {
-  background-image: url("../p1.jpg");
+  background-image: url("../Media/p1.jpg");
   background-size: cover;
 }
 
 .container .foreground-img {
   background-size: cover;
-  background-image: url("../p2.jpg");
+  background-image: url("../Media/p2.jpg");
   width: 80%;
 }
 
@@ -196,7 +196,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: SF Pro Display, sans-serif;
-  background-color: #121212;
-  color: #fefefe;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */

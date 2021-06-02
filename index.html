@@ -8,51 +8,57 @@
     <title>Green world</title>
   </head>
   <body>
-    <nav>
-      <h1>Green world</h1>
-    </nav>
     <div class="hero">
+      <nav>
+        <h1>Green world</h1>
+      </nav>
       <h1>
         <p
           class="typewrite"
           data-period="1000"
           data-type='[ "Earth can not wait.", "Neither can we."]'
         >
-          <span class="wrap"></span>
+          <span class="cursor"></span>
         </p>
       </h1>
-      <br />
-      <h2>Scroll down for more</h2>
+      <div class="wood_border"></div>
     </div>
     <div class="compare">
       <h2>What happened ?</h2>
-      <div class="container">
-        <div class="img background-img"></div>
-        <div class="img foreground-img"></div>
-        <input
-          type="range"
-          min="1"
-          max="100"
-          value="80"
-          class="slider"
-          name="slider"
-          id="slider"
-          oninput="slide(event)"
-        />
-        <div class="slider-button" id="slider-button"></div>
+      <div class="">
+        <div class="container">
+          <div class="img background-img"></div>
+          <div class="img foreground-img"></div>
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="80"
+            class="slider"
+            name="slider"
+            id="slider"
+            oninput="slide(event)"
+          />
+          <div class="slider-button"></div>
+        </div>
+        <div class="container">
+          <div class="img background-img"></div>
+          <div class="img foreground-img"></div>
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="80"
+            class="slider"
+            name="slider"
+            id="slider"
+            oninput="slide(event)"
+          />
+          <div class="slider-button"></div>
+        </div>
       </div>
     </div>
     <div class="action"></div>
-    <script>
-      function loadScript(url) {
-        var head = document.getElementsByTagName("head")[0];
-        var script = document.createElement("script");
-        script.type = "text/javascript";
-        script.src = url;
-        head.appendChild(script);
-      }
-      loadScript("js/typewrite.js");
-      loadScript("js/compare.js");
-    </script>
+    <script src="js/index.js"></script>
   </body>
 </html>
