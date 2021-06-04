@@ -46,7 +46,7 @@ nav h1 {
 }
 
 .cursor {
-  border-right: 1px solid white;
+  border-right: 10px solid white;
 }
 
 .wood_border {
@@ -57,6 +57,40 @@ nav h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../Media/images/intro-bg-trees_large.svg");
+}
+
+.select h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.select_circles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin: 3vw;
+}
+
+.select_circle {
+  width: 250px;
+  height: 250px;
+  background: #000;
+  border-radius: 50%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.select_circle a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  text-align: center;
+  line-height: 250px;
+  font-size: 4rem;
+  width: 250px;
+  height: 250px;
 }
 
 html {
