@@ -16,15 +16,11 @@ nav h1 a {
 }
 
 nav h1 img {
-  color: white;
+  -webkit-filter: invert(1);
+          filter: invert(1);
   width: 3rem;
   height: 3rem;
   margin-right: 1rem;
-}
-
-.content {
-  max-width: 980px;
-  margin: auto;
 }
 
 .hero {
@@ -46,6 +42,7 @@ nav h1 img {
           align-items: center;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../Media/images/woods.jpg");
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Media/images/woods.jpg");
+  background-position: center;
   background-size: cover;
 }
 
@@ -131,6 +128,12 @@ body {
 @font-face {
   font-family: Text;
   src: url("../Media/fonts/SanFranciscoText-Medium.otf");
+}
+
+.content {
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: auto;
 }
 
 @media (max-width: 1000px) {

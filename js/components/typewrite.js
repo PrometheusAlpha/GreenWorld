@@ -33,7 +33,7 @@ class TxtType {
     } else if (this.isDeleting && this.txt === "") {
       this.isDeleting = false;
       this.loopNum++;
-      delta = 1000;
+      delta = 500;
     }
 
     setTimeout(function () {
