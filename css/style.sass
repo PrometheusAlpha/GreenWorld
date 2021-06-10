@@ -2,16 +2,14 @@
 @import components/banner
 @import components/select
 html
-    font-size: clamp(10px,0.25vw,24px)
+    font-size: clamp(8px,0.25vw,24px)
 body
     margin: 0
     padding: 0
-    font-family: SF Pro Display, sans-serif
-*
+    font-family: Text, sans-serif
+*,*::before,*::after
     box-sizing: border-box
 @font-face
-    font-family: DearJane
-    src: url('../Media/fonts/SVN-Dear Jane.otf')
-@font-face
-    font-family: SF Pro Display
-    src: url('../Media/fonts/SF-Pro-Display-Medium.otf')
+    font-family: Text
+    src: url('../Media/fonts/SanFranciscoText-Medium.otf')
+@import components/media

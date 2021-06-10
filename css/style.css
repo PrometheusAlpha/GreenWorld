@@ -1,12 +1,30 @@
 nav {
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
 }
 
 nav h1 {
-  margin: 1rem 3rem;
-  font-family: DearJane;
-  font-size: 3rem;
+  margin: 1rem 0;
+  font-size: 4.5rem;
+  font-weight: normal;
+}
+
+nav h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav h1 img {
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.content {
+  max-width: 980px;
+  margin: auto;
 }
 
 .hero {
@@ -26,25 +44,29 @@ nav h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("../Media/images/woods.jpg");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../Media/images/woods.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Media/images/woods.jpg");
   background-size: cover;
 }
 
-.hero h1 {
-  font-weight: 600;
+.hero .banner {
+  font-weight: 550;
+  margin: 1rem 0;
 }
 
 .hero .typewrite {
   margin: 0;
-  font-size: 6rem;
-  min-height: 15rem;
+  font-size: 9rem;
+  min-height: 18rem;
+  font-weight: 550;
+  text-align: center;
 }
 
 .cursor {
-  border-right: 10px solid white;
+  border-right: 3rem solid white;
 }
 
-.wood_border {
+.hero::after {
   content: "";
   display: block;
   width: 100%;
@@ -52,25 +74,29 @@ nav h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../Media/images/intro-bg-trees_large.svg");
+  margin-bottom: -10px;
+}
+
+.select {
+  margin: 10vw 0;
 }
 
 .select h1 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 7rem;
 }
 
 .select_circles {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   gap: 15px;
-  margin: 3vw;
 }
 
 .select_circle {
-  width: 250px;
-  height: 250px;
+  width: calc(100px + 8vw);
+  height: calc(100px + 8vw);
   background: #000;
   border-radius: 50%;
   -ms-grid-column-align: center;
@@ -82,34 +108,48 @@ nav h1 {
   color: #fff;
   display: block;
   text-align: center;
-  line-height: 250px;
+  line-height: calc(100px + 8vw);
   font-size: 4rem;
-  width: 250px;
-  height: 250px;
+  letter-spacing: 5px;
 }
 
 html {
-  font-size: clamp(10px, 0.25vw, 24px);
+  font-size: clamp(8px, 0.25vw, 24px);
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: SF Pro Display, sans-serif;
+  font-family: Text, sans-serif;
 }
 
-* {
+*, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 @font-face {
-  font-family: DearJane;
-  src: url("../Media/fonts/SVN-Dear Jane.otf");
+  font-family: Text;
+  src: url("../Media/fonts/SanFranciscoText-Medium.otf");
 }
 
-@font-face {
-  font-family: SF Pro Display;
-  src: url("../Media/fonts/SF-Pro-Display-Medium.otf");
+@media (max-width: 1000px) {
+  .select_circles {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .select_circle {
+    width: 40vw;
+    height: 40vw;
+  }
+  .select_circle a {
+    line-height: 40vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .select h1 {
+    font-size: 4rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

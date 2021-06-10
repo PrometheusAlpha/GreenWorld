@@ -21,7 +21,7 @@ class TxtType {
     this.el.innerHTML = '<span class="cursor">' + this.txt + "</span>";
 
     var that = this;
-    var delta = 150;
+    var delta = 100;
 
     if (this.isDeleting) {
       delta /= 2;

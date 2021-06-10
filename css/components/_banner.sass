@@ -1,3 +1,6 @@
+.content
+    max-width: 980px
+    margin: auto
 .hero
     height: 150vh
     width: 100%
@@ -6,17 +9,20 @@
     flex-direction: column
     justify-content: space-between
     align-items: center
-    background: url('../Media/images/woods.jpg')
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../Media/images/woods.jpg')
     background-size: cover
-    h1
-        font-weight: 600
+    .banner
+        font-weight: 550
+        margin: 1rem 0
     .typewrite
         margin: 0
-        font-size: 6rem
-        min-height: 15rem
+        font-size: 9rem
+        min-height: 18rem
+        font-weight: 550
+        text-align: center
 .cursor
-    border-right: 10px solid white
-.wood_border
+    border-right: 3rem solid white
+.hero::after
     content: ""
     display: block
     width: 100%
@@ -24,3 +30,4 @@
     background-repeat: no-repeat
     background-size: cover
     background-image: url('../Media/images/intro-bg-trees_large.svg')
+    margin-bottom: -10px
