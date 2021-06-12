@@ -137,7 +137,6 @@ nav h1 img {
 }
 
 .tile a p {
-  display: inline-block;
   font-size: 3rem;
   border: 3px solid white;
   border-radius: 10px;
