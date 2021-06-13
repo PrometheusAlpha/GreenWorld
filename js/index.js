@@ -8,3 +8,4 @@ function loadScript(url) {
   body.appendChild(script);
 }
 loadScript("js/components/typewrite.js");
+loadScript("js/components/post.js");

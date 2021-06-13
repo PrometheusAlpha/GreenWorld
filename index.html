@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/png" href="../Media/images/earth.svg"/>
+    <link rel="icon" type="image/png" href="../Media/images/earth.svg" />
+    <link rel="preload" href="Media/fonts/SanFranciscoText-Medium.otf" as="font" type="font/otf" crossorigin>
     <title>GREEN WORLD - Earth will not wait</title>
   </head>
   <body>
@@ -13,7 +14,7 @@
       <nav>
         <article>
           <h1>
-            <img src="Media/images/earth.svg" alt="" /><a href=""
+            <img src="Media/images/earth.svg" alt="" /><a href="index.html"
               >GREEN WORLD</a
             >
           </h1>
@@ -33,22 +34,46 @@
       <article>
         <h1>WHAT HAPPENED ?</h1>
         <div class="tile">
-            <div class="large-12 tile__item water">
-                <a href=""><p>Find out more</p></a>
-                <h2 class="tile__title">WATER</h2>
-            </div>
-            <div class="large-6-small-12 tile__item air">
-                <a href=""><p>Find out more</p></a>
-                <h2 class="tile__title">AIR</h2>
-            </div>
-            <div class="large-6-small-12 tile__item soil">
-                <a href=""><p>Find out more</p></a>
-                <h2 class="tile__title">SOIL</h2>
-            </div>
-            <div class="large-12 tile__item heat">
-                <a href=""><p>Find out more</p></a>
-                <h2 class="tile__title">GLOBAL WARMING</h2>
-            </div>
+          <div class="large-12 tile__item water">
+            <button onclick="show('water')" class="more">
+              <p>Find out more</p>
+            </button>
+            <h2 class="tile__title">WATER</h2>
+            <section class="post" id="water_post">
+              <button onclick="hide('water')">
+                <img src="Media/images/close.svg" alt="" />
+              </button>
+              <div class="article">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ipsum accusamus libero quaerat nam possimus doloribus facere
+                  ab fugit ullam dolor! Corporis unde delectus ipsam nesciunt
+                  provident consequatur autem labore placeat alias ipsa numquam
+                  quas voluptates vel eaque consequuntur libero amet, qui error
+                  iure doloribus incidunt facilis necessitatibus. Incidunt nihil
+                  quos quo voluptatum, omnis labore repudiandae voluptatibus
+                  architecto culpa, amet minima adipisci nostrum velit? Qui
+                  suscipit dolores a velit nihil tempore eveniet incidunt
+                  doloremque natus dolor ut quasi facilis adipisci nesciunt rem
+                  quibusdam, consequatur sint, at sapiente saepe. Deleniti in
+                  aspernatur quasi illum sequi libero, excepturi rerum ullam
+                  voluptates quia inventore?
+                </p>
+              </div>
+            </section>
+          </div>
+          <div class="large-6-small-12 tile__item air">
+            <button class="more"><p>Find out more</p></button>
+            <h2 class="tile__title">AIR</h2>
+          </div>
+          <div class="large-6-small-12 tile__item soil">
+            <button class="more"><p>Find out more</p></button>
+            <h2 class="tile__title">SOIL</h2>
+          </div>
+          <div class="large-12 tile__item heat">
+            <button class="more"><p>Find out more</p></button>
+            <h2 class="tile__title">GLOBAL WARMING</h2>
+          </div>
         </div>
       </article>
     </section>

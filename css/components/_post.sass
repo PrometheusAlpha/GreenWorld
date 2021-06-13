@@ -1,0 +1,36 @@
+.post
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    backdrop-filter: blur(10px)
+    z-index: 9
+    overflow-y: auto
+    display: none
+    &::-webkit-scrollbar
+        display: none
+    button
+        background: none
+        border: none
+        position: sticky
+        width: 16px
+        height: 16px
+        top: 0
+        left: 36rem
+        transform: scale(2) translateY(10rem)
+        cursor: pointer
+.article
+    width: calc(100vw - 60rem)
+    margin: 10rem 25rem 10vw 30rem
+    padding: 196px 157px 169px;
+    height: 180rem
+    border-radius: 18px
+    background: #fff
+    box-shadow: 0 0 150px #444
+    p
+        z-index: 99
+        font-size: 4rem
+        color: #000
+.more:active ~ .post
+    opacity: 1
