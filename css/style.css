@@ -111,11 +111,6 @@ nav h1 img {
   position: relative;
 }
 
-.tile__item:hover .tile__title {
-  top: -4rem;
-  opacity: 1;
-}
-
 .tile__item:hover a p {
   opacity: 1;
 }
@@ -138,8 +133,8 @@ nav h1 img {
 
 .tile a p {
   font-size: 3rem;
-  border: 3px solid white;
-  border-radius: 10px;
+  border: 2px solid white;
+  border-radius: 15px;
   padding: 10px;
   text-align: center;
   opacity: 0;
@@ -147,11 +142,55 @@ nav h1 img {
   transition: .1s ease-in-out;
 }
 
-.tile__title {
-  position: absolute;
+.tile a p:hover {
+  background: #fff;
+  color: #000;
+}
+
+.water.tile__item:hover .tile__title {
+  top: -4.5rem;
+  opacity: 1;
+}
+
+.air.tile__item:hover .tile__title {
+  left: -6rem;
+  opacity: 1;
+}
+
+.soil.tile__item:hover .tile__title {
+  right: -6.5rem;
+  opacity: 1;
+}
+
+.heat.tile__item:hover .tile__title {
+  bottom: -4.5rem;
+  opacity: 1;
+}
+
+.water .tile__title {
   margin: 0;
   top: 0;
   left: 2rem;
+}
+
+.air .tile__title {
+  margin: 0;
+  top: 5rem;
+  left: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.soil .tile__title {
+  margin: 0;
+  top: 5rem;
+  right: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.tile__title {
+  position: absolute;
   font-size: 4rem;
   opacity: 0;
   -webkit-transition: .1s ease-in-out;
@@ -159,8 +198,29 @@ nav h1 img {
   letter-spacing: 3px;
 }
 
+.heat .tile__title {
+  margin: 0;
+  bottom: 0;
+  left: 2rem;
+}
+
 .water {
   background: url("../Media/images/water-pollution.jpg");
+  background-size: cover;
+}
+
+.air {
+  background: url("../Media/images/air-pollution.jpg");
+  background-size: cover;
+}
+
+.soil {
+  background: url("../Media/images/soil-pollution.jpg");
+  background-size: cover;
+}
+
+.heat {
+  background: url("../Media/images/global-warming.jpg");
   background-size: cover;
 }
 
