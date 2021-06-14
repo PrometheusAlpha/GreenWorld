@@ -243,6 +243,7 @@ nav h1 img {
   border: none;
   position: -webkit-sticky;
   position: sticky;
+  display: block;
   width: 16px;
   height: 16px;
   top: 0;
