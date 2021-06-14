@@ -1,21 +1,29 @@
 @media (max-width: 1000px)
+    html
+        font-size: 18px
     article
         width: 90vw
     .large-6-small-12
         grid-column: 1 / span 12 !important
+@media (max-width: 740px)
+    html
+        font-size: 16px
 @media (max-width: 500px)
     .article
         width: 100vw
         margin: 0
         margin-top: -2rem
         border-radius: 0
+    .tile__title
+        display: none
     .post
         button
             top: -9vh
             left: 10px
     .select
         h1
-            font-size: 4rem
+            font-size: 1.2rem
     .hero
         .typewrite
-            font-size: 4.5rem
+            font-size: 3rem
+            letter-spacing: -.15rem
