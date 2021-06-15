@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/png" href="Media/images/earth.svg" loading="lazy"/>
+    <link
+      rel="icon"
+      type="image/png"
+      href="Media/images/earth.svg"
+      loading="lazy"
+    />
     <!-- <link rel="preload" href="Media/images/woods.jpg" as="image"> -->
-    <link rel="preload" href="Media/images/air-pollution.jpg" as="image">
+    <link rel="preload" href="Media/images/air-pollution.jpg" as="image" />
     <!-- <link rel="preload" href="Media/images/intro-bg-trees_large.svg" as="image"> -->
-    <link rel="preload" href="Media/images/global-warming.jpg" as="image">
-    <link rel="preload" href="Media/images/soil-pollution.jpg" as="image">
-    <link rel="preload" href="Media/images/water-pollution.jpg" as="image">
+    <link rel="preload" href="Media/images/global-warming.jpg" as="image" />
+    <link rel="preload" href="Media/images/soil-pollution.jpg" as="image" />
+    <link rel="preload" href="Media/images/water-pollution.jpg" as="image" />
     <link
       rel="preload"
       href="Media/fonts/SanFranciscoText-Medium.otf"
@@ -51,6 +56,7 @@
             <button onclick="show('water')" class="more">Find out more</button>
             <h2 class="tile__title">WATER</h2>
             <section class="post" id="water_post">
+              <div class="bg" onclick="hide('water')"></div>
               <button onclick="hide('water')">
                 <img src="Media/images/close.svg" alt="" />
               </button>
@@ -75,6 +81,7 @@
             <button onclick="show('air')" class="more">Find out more</button>
             <h2 class="tile__title">AIR</h2>
             <section class="post" id="air_post">
+              <div class="bg" onclick="hide('air')"></div>
               <button onclick="hide('air')">
                 <img src="Media/images/close.svg" alt="" />
               </button>
@@ -99,6 +106,7 @@
             <button onclick="show('soil')" class="more">Find out more</button>
             <h2 class="tile__title">SOIL</h2>
             <section class="post" id="soil_post">
+              <div class="bg" onclick="hide('soil')"></div>
               <button onclick="hide('soil')">
                 <img src="Media/images/close.svg" alt="" />
               </button>
@@ -123,6 +131,7 @@
             <button onclick="show('heat')" class="more">Find out more</button>
             <h2 class="tile__title">GLOBAL WARMING</h2>
             <section class="post" id="heat_post">
+              <div class="bg" onclick="hide('heat')"></div>
               <button onclick="hide('heat')">
                 <img src="Media/images/close.svg" alt="" />
               </button>
@@ -143,6 +152,39 @@
               </div>
             </section>
           </div>
+        </div>
+      </article>
+    </section>
+    <section class="footer">
+      <article>
+        <div class="about">
+          <h1>Our team</h1>
+          <div class="team">
+            <a href="https://www.facebook.com/prometheux2/">
+              <img
+                onmouseover="names('Nguyễn Huy Hoàng')"
+                onmouseleave="unname()"
+                src="Media/images/hoang.jpg"
+                alt=""
+              />
+            </a>
+            <a href="https://www.facebook.com/prometheux2/">
+              <img src="Media/images/hoang.jpg" alt="" />
+            </a>
+            <a href="https://www.facebook.com/prometheux2/">
+              <img src="Media/images/hoang.jpg" alt="" />
+            </a>
+            <a href="https://www.facebook.com/prometheux2/">
+              <img src="Media/images/hoang.jpg" alt="" />
+            </a>
+            <a href="https://www.facebook.com/prometheux2/">
+              <img src="Media/images/hoang.jpg" alt="" />
+            </a>
+            <a href="https://www.facebook.com/prometheux2/">
+              <img src="Media/images/hoang.jpg" alt="" />
+            </a>
+          </div>
+          <div id="name"></div>
         </div>
       </article>
     </section>
