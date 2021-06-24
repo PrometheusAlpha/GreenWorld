@@ -1,52 +1,50 @@
 nav {
+  position: fixed;
+  top: 0;
+  z-index: 99;
   width: 100%;
   background: #000;
   color: #fff;
+  height: 50px;
+}
+
+nav p {
+  display: inline;
+}
+
+nav #logo__disappear__left, nav #logo__disappear__right {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 nav h1 {
-  margin: .5rem 0;
-  font-size: 2rem;
+  margin: auto;
+  display: inline-block;
+  line-height: 50px;
+  font-size: 28px;
   font-weight: normal;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-nav h1 a {
-  text-decoration: none;
-  color: #fff;
 }
 
 nav h1 img {
   -webkit-filter: brightness(100);
           filter: brightness(100);
-  width: 1.3rem;
-  height: 1.3rem;
-  margin-right: 0.3rem;
+  width: 21px;
+  height: 21px;
+  margin: 0 1px -1px 1px;
 }
 
 .hero {
-  height: 120vh;
+  height: 100vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-position: center;
-  background-size: cover;
 }
 
 .hero .banner {
@@ -56,19 +54,13 @@ nav h1 img {
 .hero .typewrite {
   margin: 0;
   font-size: 5rem;
-  min-height: 18rem;
   text-align: center;
   font-weight: 600;
   font-family: SF Pro Display;
-  letter-spacing: -.05rem;
 }
 
 .cursor {
-  border-right: 1rem solid black;
-}
-
-.hero::after {
-  content: "";
+  border-right: 10px solid black;
 }
 
 .select {
@@ -99,7 +91,7 @@ nav h1 img {
 }
 
 .tile__item {
-  height: 30vw;
+  height: 40vw;
   border-radius: 25px;
   -webkit-box-shadow: inset 0 0 0 2000px #0000009b;
           box-shadow: inset 0 0 0 2000px #0000009b;
@@ -371,15 +363,20 @@ body {
 
 @font-face {
   font-family: SF Pro Display;
-  src: url("../Media/fonts/SF-Pro-Display-Regular.otf");
+  src: url("../Media/fonts/SF-Pro-Display-Semibold.otf");
   font-display: swap;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 article {
   max-width: 1200px;
   padding: 0 20px;
   height: 100%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 @media (max-width: 1000px) {
@@ -399,6 +396,9 @@ article {
 @media (max-width: 740px) {
   html {
     font-size: 16px;
+  }
+  .tile__item {
+    height: 50vh;
   }
 }
 

@@ -8,3 +8,4 @@ function loadScript(url) {
 loadScript("js/components/typewrite.js");
 loadScript("js/components/post.js");
 loadScript("js/components/name.js");
+loadScript("js/components/nav.js");
