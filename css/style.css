@@ -3,9 +3,8 @@ nav {
   top: 0;
   z-index: 99;
   width: 100%;
-  background: #000;
-  color: #fff;
   height: 50px;
+  text-align: right;
 }
 
 nav p {
@@ -34,33 +33,40 @@ nav h1 img {
 }
 
 .hero {
-  height: 100vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .hero .banner {
+  height: 100vh;
   margin: 1rem 0;
 }
 
-.hero .typewrite {
-  margin: 0;
+.hero .banner div {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .banner p {
   font-size: 5rem;
-  text-align: center;
+  margin: 0;
+}
+
+.hero .typewrite {
   font-weight: 600;
-  font-family: SF Pro Display;
 }
 
 .cursor {
-  border-right: 10px solid black;
+  border-right: 5px solid #444;
 }
 
 .select {
@@ -68,8 +74,7 @@ nav h1 img {
 }
 
 .select h1 {
-  text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .large-12 {
@@ -315,8 +320,8 @@ nav h1 img {
 .team a img {
   width: 2.5rem;
   height: 2.5rem;
-  -webkit-filter: saturate(0) contrast(1.5) brightness(0.8);
-          filter: saturate(0) contrast(1.5) brightness(0.8);
+  -webkit-filter: saturate(0) contrast(1.8) brightness(0.8);
+          filter: saturate(0) contrast(1.8) brightness(0.8);
   border-radius: 50%;
   -webkit-transition: .1s ease-in-out;
   transition: .1s ease-in-out;
@@ -344,10 +349,11 @@ html {
 }
 
 body {
-  background: #f5f5f7;
+  background: #000;
+  color: white;
   margin: 0;
   padding: 0;
-  font-family: Text, sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 *, *::before, *::after {
@@ -420,7 +426,7 @@ article {
     left: 10px;
   }
   .select h1 {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   .hero .typewrite {
     font-size: 3rem;

@@ -3,7 +3,7 @@ window.onscroll = function (f) {
   var logo_right = document.getElementById("logo__disappear__right");
 
   if (this.oldScroll < this.scrollY) {
-    logo_left.style.marginRight = "-3.7rem";
+    logo_left.style.marginRight = "-80px";
     logo_left.style.opacity = "0";
     logo_right.style.opacity = "0";
   } else {

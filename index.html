@@ -1,166 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="Media/images/earth.svg"
-      loading="lazy"
-    />
+    <link rel="icon" type="image/png" href="Media/images/earth.svg" loading="lazy" />
     <!-- <link rel="preload" href="Media/images/woods.jpg" as="image"> -->
     <link rel="preload" href="Media/images/air-pollution.jpg" as="image" />
     <!-- <link rel="preload" href="Media/images/intro-bg-trees_large.svg" as="image"> -->
     <link rel="preload" href="Media/images/global-warming.jpg" as="image" />
     <link rel="preload" href="Media/images/soil-pollution.jpg" as="image" />
     <link rel="preload" href="Media/images/water-pollution.jpg" as="image" />
-    <link
-      rel="preload"
-      href="Media/fonts/SanFranciscoText-Medium.otf"
-      as="font"
-      type="font/otf"
-      crossorigin
-    />
+    <link rel="preload" href="Media/fonts/SanFranciscoText-Medium.otf" as="font" type="font/otf" crossorigin />
     <title>GREEN WORLD - Earth will not wait</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <section class="hero">
-      <nav>
-        <article>
-          <h1>
-            <a href="index.html"
-              >G<p id="logo__disappear__left">REEN </p>W<img src="Media/images/earth.svg" alt="" /><p id="logo__disappear__right">RLD</p></a
-            >
-          </h1>
-        </article>
-      </nav>
-      <h1 class="banner">
-        <p
-          class="typewrite"
-          data-period="300"
-          data-type='[ "Earth can not wait", "Neither can we  !"]'
-        >
-          <span class="cursor"></span>
-        </p>
-      </h1>
+        <nav>
+            <article>
+                <h1>
+                    <a href="index.html"
+              >G<p id="logo__disappear__left">REEN </p>W<img src="Media/images/earth.svg" alt="" /><p id="logo__disappear__right">RLD</p></a>
+                </h1>
+            </article>
+        </nav>
+        <h1 class="banner">
+            <article>
+                <div>
+                    <p class="typewrite" data-period="300" data-type='[ "Water", "Soil", "Air"]'>
+                    </p>
+                    <p>pollution.</p>
+                    <p>Enough.</p>
+                </div>
+            </article>
+        </h1>
     </section>
     <section class="select">
-      <article>
-        <h1>WHAT HAPPENED ?</h1>
-        <div class="tile">
-          <div class="large-12 tile__item water">
-            <button onclick="show('water')" class="more">Find out more</button>
-            <h2 class="tile__title">WATER</h2>
-            <section class="post" id="water_post">
-              <div class="bg" onclick="hide('water')"></div>
-              <button onclick="hide('water')">
-                <img src="Media/images/close.svg" alt="" />
-              </button>
-              <div class="article">
-                <p>
-                  Leverage agile frameworks to provide a robust synopsis for
-                  high level overviews. Iterative approaches to corporate
-                  strategy foster collaborative thinking to further the overall
-                  value proposition. Organically grow the holistic world view of
-                  disruptive innovation via workplace diversity and empowerment.
-                  Bring to the table win-win survival strategies to ensure
-                  proactive domination. At the end of the day, going forward, a
-                  new normal that has evolved from generation X is on the runway
-                  heading towards a streamlined cloud solution. User generated
-                  content in real-time will have multiple touchpoints for
-                  offshoring.
-                </p>
-              </div>
-            </section>
-          </div>
-          <div class="large-6-small-12 tile__item air">
-            <button onclick="show('air')" class="more">Find out more</button>
-            <h2 class="tile__title">AIR</h2>
-            <section class="post" id="air_post">
-              <div class="bg" onclick="hide('air')"></div>
-              <button onclick="hide('air')">
-                <img src="Media/images/close.svg" alt="" />
-              </button>
-              <div class="article">
-                <p>
-                  Leverage agile frameworks to provide a robust synopsis for
-                  high level overviews. Iterative approaches to corporate
-                  strategy foster collaborative thinking to further the overall
-                  value proposition. Organically grow the holistic world view of
-                  disruptive innovation via workplace diversity and empowerment.
-                  Bring to the table win-win survival strategies to ensure
-                  proactive domination. At the end of the day, going forward, a
-                  new normal that has evolved from generation X is on the runway
-                  heading towards a streamlined cloud solution. User generated
-                  content in real-time will have multiple touchpoints for
-                  offshoring.
-                </p>
-              </div>
-            </section>
-          </div>
-          <div class="large-6-small-12 tile__item soil">
-            <button onclick="show('soil')" class="more">Find out more</button>
-            <h2 class="tile__title">SOIL</h2>
-            <section class="post" id="soil_post">
-              <div class="bg" onclick="hide('soil')"></div>
-              <button onclick="hide('soil')">
-                <img src="Media/images/close.svg" alt="" />
-              </button>
-              <div class="article">
-                <p>
-                  Leverage agile frameworks to provide a robust synopsis for
-                  high level overviews. Iterative approaches to corporate
-                  strategy foster collaborative thinking to further the overall
-                  value proposition. Organically grow the holistic world view of
-                  disruptive innovation via workplace diversity and empowerment.
-                  Bring to the table win-win survival strategies to ensure
-                  proactive domination. At the end of the day, going forward, a
-                  new normal that has evolved from generation X is on the runway
-                  heading towards a streamlined cloud solution. User generated
-                  content in real-time will have multiple touchpoints for
-                  offshoring.
-                </p>
-              </div>
-            </section>
-          </div>
-          <div class="large-12 tile__item heat">
-            <button onclick="show('heat')" class="more">Find out more</button>
-            <h2 class="tile__title">GLOBAL WARMING</h2>
-            <section class="post" id="heat_post">
-              <div class="bg" onclick="hide('heat')"></div>
-              <button onclick="hide('heat')">
-                <img src="Media/images/close.svg" alt="" />
-              </button>
-              <div class="article">
-                <p>
-                  Leverage agile frameworks to provide a robust synopsis for
-                  high level overviews. Iterative approaches to corporate
-                  strategy foster collaborative thinking to further the overall
-                  value proposition. Organically grow the holistic world view of
-                  disruptive innovation via workplace diversity and empowerment.
-                  Bring to the table win-win survival strategies to ensure
-                  proactive domination. At the end of the day, going forward, a
-                  new normal that has evolved from generation X is on the runway
-                  heading towards a streamlined cloud solution. User generated
-                  content in real-time will have multiple touchpoints for
-                  offshoring.
-                </p>
-              </div>
-            </section>
-          </div>
-        </div>
-      </article>
+        <article>
+            <h1>What happened ?</h1>
+            <div class="tile">
+                <div class="large-12 tile__item water">
+                    <button onclick="show('water')" class="more">Find out more</button>
+                    <h2 class="tile__title">WATER</h2>
+                    <section class="post" id="water_post">
+                        <div class="bg" onclick="hide('water')"></div>
+                        <button onclick="hide('water')">
+                            <img src="Media/images/close.svg" alt="" />
+                        </button>
+                        <div class="article">
+                            <p>
+                                Leverage agile frameworks to provide a robust synopsis for
+                                high level overviews. Iterative approaches to corporate
+                                strategy foster collaborative thinking to further the overall
+                                value proposition. Organically grow the holistic world view of
+                                disruptive innovation via workplace diversity and empowerment.
+                                Bring to the table win-win survival strategies to ensure
+                                proactive domination. At the end of the day, going forward, a
+                                new normal that has evolved from generation X is on the runway
+                                heading towards a streamlined cloud solution. User generated
+                                content in real-time will have multiple touchpoints for
+                                offshoring.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="large-6-small-12 tile__item air">
+                    <button onclick="show('air')" class="more">Find out more</button>
+                    <h2 class="tile__title">AIR</h2>
+                    <section class="post" id="air_post">
+                        <div class="bg" onclick="hide('air')"></div>
+                        <button onclick="hide('air')">
+                            <img src="Media/images/close.svg" alt="" />
+                        </button>
+                        <div class="article">
+                            <p>
+                                Leverage agile frameworks to provide a robust synopsis for
+                                high level overviews. Iterative approaches to corporate
+                                strategy foster collaborative thinking to further the overall
+                                value proposition. Organically grow the holistic world view of
+                                disruptive innovation via workplace diversity and empowerment.
+                                Bring to the table win-win survival strategies to ensure
+                                proactive domination. At the end of the day, going forward, a
+                                new normal that has evolved from generation X is on the runway
+                                heading towards a streamlined cloud solution. User generated
+                                content in real-time will have multiple touchpoints for
+                                offshoring.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="large-6-small-12 tile__item soil">
+                    <button onclick="show('soil')" class="more">Find out more</button>
+                    <h2 class="tile__title">SOIL</h2>
+                    <section class="post" id="soil_post">
+                        <div class="bg" onclick="hide('soil')"></div>
+                        <button onclick="hide('soil')">
+                            <img src="Media/images/close.svg" alt="" />
+                        </button>
+                        <div class="article">
+                            <p>
+                                Leverage agile frameworks to provide a robust synopsis for
+                                high level overviews. Iterative approaches to corporate
+                                strategy foster collaborative thinking to further the overall
+                                value proposition. Organically grow the holistic world view of
+                                disruptive innovation via workplace diversity and empowerment.
+                                Bring to the table win-win survival strategies to ensure
+                                proactive domination. At the end of the day, going forward, a
+                                new normal that has evolved from generation X is on the runway
+                                heading towards a streamlined cloud solution. User generated
+                                content in real-time will have multiple touchpoints for
+                                offshoring.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="large-12 tile__item heat">
+                    <button onclick="show('heat')" class="more">Find out more</button>
+                    <h2 class="tile__title">GLOBAL WARMING</h2>
+                    <section class="post" id="heat_post">
+                        <div class="bg" onclick="hide('heat')"></div>
+                        <button onclick="hide('heat')">
+                            <img src="Media/images/close.svg" alt="" />
+                        </button>
+                        <div class="article">
+                            <p>
+                                Leverage agile frameworks to provide a robust synopsis for
+                                high level overviews. Iterative approaches to corporate
+                                strategy foster collaborative thinking to further the overall
+                                value proposition. Organically grow the holistic world view of
+                                disruptive innovation via workplace diversity and empowerment.
+                                Bring to the table win-win survival strategies to ensure
+                                proactive domination. At the end of the day, going forward, a
+                                new normal that has evolved from generation X is on the runway
+                                heading towards a streamlined cloud solution. User generated
+                                content in real-time will have multiple touchpoints for
+                                offshoring.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </article>
     </section>
     <section class="footer">
-      <article>
-        <div class="about">
-          <h1>Our team</h1>
-          <div class="team">
-            <a href="https://www.facebook.com/prometheux2" target="_blank">
+        <article>
+            <div class="about">
+                <h1>Our team</h1>
+                <div class="team">
+                    <a href="https://www.facebook.com/prometheux2" target="_blank">
               <img
                 onmouseover="names('Nguyễn Huy Hoàng')"
                 onmouseleave="unname()"
@@ -168,7 +159,7 @@
                 alt=""
               />
             </a>
-            <a href="https://www.facebook.com/hungho46" target="_blank">
+                    <a href="https://www.facebook.com/hungho46" target="_blank">
               <img
                 onmouseover="names('Đỗ Hùng Sơn')"
                 onmouseleave="unname()"
@@ -176,7 +167,7 @@
                 alt=""
               />
             </a>
-            <a href="https://www.facebook.com/quan02u" target="_blank">
+                    <a href="https://www.facebook.com/quan02u" target="_blank">
               <img
                 onmouseover="names('Nguyễn Như Quân')"
                 onmouseleave="unname()"
@@ -184,15 +175,15 @@
                 alt=""
               />
             </a>
-            <a href="https://www.facebook.com/prometheux2" target="_blank">
+                    <a href="https://www.facebook.com/thanh.vutrung.520" target="_blank">
               <img
-                onmouseover="names('Nguyễn Huy Hoàng')"
+                onmouseover="names('Vũ Trung Thành')"
                 onmouseleave="unname()"
-                src="Media/images/hoang.jpg"
+                src="Media/images/thanh.jpg"
                 alt=""
               />
             </a>
-            <a href="https://www.facebook.com/levuhieu151" target="_blank">
+                    <a href="https://www.facebook.com/levuhieu151" target="_blank">
               <img
                 onmouseover="names('Lê Vũ Hiếu')"
                 onmouseleave="unname()"
@@ -200,19 +191,20 @@
                 alt=""
               />
             </a>
-            <a href="https://www.facebook.com/prometheux2" target="_blank">
+                    <a href="https://www.facebook.com/profile.php?id=100049430618536" target="_blank">
               <img
-                onmouseover="names('Nguyễn Huy Hoàng')"
+                onmouseover="names('Trần Tuấn Long')"
                 onmouseleave="unname()"
-                src="Media/images/hoang.jpg"
+                src="Media/images/long.jpg"
                 alt=""
               />
             </a>
-          </div>
-          <div id="name"></div>
-        </div>
-      </article>
+                </div>
+                <div id="name"></div>
+            </div>
+        </article>
     </section>
     <script src="js/index.js"></script>
-  </body>
+</body>
+
 </html>
