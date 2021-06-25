@@ -362,14 +362,8 @@ body {
 }
 
 @font-face {
-  font-family: Text;
-  src: url("../Media/fonts/SanFranciscoText-Medium.otf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: SF Pro Display;
-  src: url("../Media/fonts/SF-Pro-Display-Semibold.otf");
+  font-family: Inter;
+  src: url("Media/fonts/Inter-VariableFont_slnt,wght.ttf");
   font-display: swap;
 }
 
