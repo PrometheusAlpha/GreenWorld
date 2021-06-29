@@ -1,33 +1,43 @@
 @media (max-width: 1000px)
-    html
-        font-size: 18px
-    article
-        width: 90vw
-    .large-6-small-12
-        grid-column: 1 / span 12 !important
+  .tile
+    flex-direction: column
+  .tile__item
+    width: 100%
+    height: 60vh
+    filter: saturate(1)
+    &:hover
+      transform: none
+  .tile__item:not(:first-child)
+    margin-left: 0 !important
+    margin-top: -10vh
 @media (max-width: 740px)
-    html
-        font-size: 16px
-    .tile__item
-        height: 50vh
+  nav
+    background: #000
+  .footer
+    &__about
+      right: 0
+    img
+      filter: saturate(1)
+  #footer__name
+    display: none
 @media (max-width: 500px)
-    html
-        font-size: 12px
-    .article
-        width: 100vw
-        margin: 0
-        margin-top: -2rem
-        border-radius: 0
-    .tile__title
-        display: none
-    .post
-        button
-            top: -9vh
-            left: 10px
-    .select
-        h1
-            font-size: 2rem
-    .hero
-        .typewrite
-            font-size: 3rem
-            letter-spacing: -.15rem
+  .select
+    h1
+      text-align: center
+
+  .article
+    width: 100vw
+    margin: 0
+    margin-top: -2rem
+    border-radius: 0
+  .post
+    button
+      top: -9vh
+      left: 10px
+
+  .footer
+    &__slogan
+      font-size: 2rem
+      text-align: right
+  #footer__name
+    max-width: 30rem

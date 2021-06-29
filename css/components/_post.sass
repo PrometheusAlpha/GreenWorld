@@ -1,37 +1,36 @@
 @mixin fullsize
     top: 0
     left: 0
-    bottom: 0
     right: 0
+    bottom: 0
 .post
+    z-index: 9
+    display: none
     position: fixed
     @include fullsize
-    z-index: 9
     backdrop-filter: blur(10px)
-    overflow-y: auto
-    display: none
+
     -ms-overflow-style: none
     scrollbar-width: none
+    overflow-y: auto
     &::-webkit-scrollbar
         display: none
     button
+        transform: scale(2) translateY(10vh)
+        border: 1px solid black
         background: #fff
         border-radius: 50%
-        border: 1px solid black
-        padding: 0
         position: sticky
-        width: 16px
-        height: 16px
-        top: 0
-        left: 14vw
-        transform: scale(2) translateY(10vh)
         cursor: pointer
-        transition: .15s ease-in-out
+        height: 16px
+        width: 16px
+        left: 14vw
+        padding: 0
+        top: 0
         img
-            transition: .1s ease-in-out
             position: absolute
-            top: -1px
             left: -1px
+            top: -1px
         &:hover
             background: #000
         &:hover img
@@ -39,21 +38,19 @@
 .bg
     position: absolute
     @include fullsize
-    z-index: -9
     cursor: pointer
+    z-index: -9
 
 .article
     width: 80vw
+    min-height: 100vh
+    background: #fff
+    border-radius: 18px
     margin: 10vh 10vw 10vh 10vw
     padding: 15vh 10vw 10vw 10vw
-    min-height: 100vh
-    border-radius: 18px
-    background: #fff
     box-shadow: 0 0 150px #444
 .post-wrapper
     color: #000
-    h2
-      font-size: 2.5rem
     span
       margin: .5rem 0
       display: inline-block
