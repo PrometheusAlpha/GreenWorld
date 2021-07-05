@@ -1,15 +1,16 @@
 @media (max-width: 1000px)
   .tile
     flex-direction: column
+    align-items: center
   .tile__item
-    width: 100%
+    width: 40vh
     height: 60vh
     filter: saturate(1)
     &:hover
       transform: none
   .tile__item:not(:first-child)
     margin-left: 0 !important
-    margin-top: -10vh
+    margin-top: 5vh
 @media (max-width: 740px)
   nav
     background: #000
@@ -38,6 +39,6 @@
   .footer
     &__slogan
       font-size: 2rem
-      text-align: right
+      text-align: center
   #footer__name
     max-width: 30rem

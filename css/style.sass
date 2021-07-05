@@ -2,7 +2,7 @@ html
   margin: 0
   padding: 0
   font-size: 18px
-  font-size: clamp(12px,3vw,20px)
+  font-size: clamp(12px,3vmin,20px)
 body
   margin: 0
   padding: 0
@@ -29,26 +29,30 @@ body
 *,*::before,*::after
   box-sizing: border-box
   transition: .2s ease-in-out
-  font-family: Inter, sans-serif
-@font-face
-  font-display: swap
-  font-family: Inter
-  src: url('../media/fonts/Inter-VariableFont_slnt,wght.ttf')
+  font-family: Google Sans, sans-serif
 a
   color: #fff
   text-decoration: none
 h1
   font-size: 2.5rem
-  font-weight: 650
   letter-spacing: -.1rem
 h2
-  font-weight: 550
+  font-weight: 500
   font-size: 2rem
 article
-  max-width: 1200px
+  max-width: 1100px
   padding: 0 20px
   height: 100%
   margin: 0 auto
+@font-face
+  font-family: Google Sans
+  src: url(../media/fonts/GoogleSans-Medium.ttf)
+  font-weight: normal
+@font-face
+  font-family: Google Sans
+  src: url(../media/fonts/GoogleSans-Bold.ttf)
+  font-weight: bold
+
 @import components/nav
 @import components/banner
 @import components/select

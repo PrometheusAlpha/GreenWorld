@@ -1,19 +1,20 @@
 .footer
   position: relative
   width: 100%
-  height: 40vh
-
+  // height: 50vmin
+  padding: 30px 0
   margin-top: 10rem
 
   background: #1d1d1d
   h2
-    margin: 10px
+    margin: 20px 0
 .footer__slogan
   position: relative
-  top: 200px
+  // top: 30vmin
 .footer__team
-  display: grid
-  grid-template-columns: repeat(6,1fr)
+  display: flex
+  // display: grid
+  // grid-template-columns: repeat(6,1fr)
   gap: .5rem
   a
     color: #121212
@@ -31,18 +32,6 @@
   background: #666565
   padding: 20px
   margin: 0 20px
-  &::after
-    content: ""
-
-    position: absolute
-    z-index: -1
-    top: 0
-    right: 100%
-    width: 20px
-    height: 48px
-
-    background: #909090
-    clip-path: polygon(100% 0,100% 100%,0 100%)
 #footer__name
   width: 100%
   height: 3rem

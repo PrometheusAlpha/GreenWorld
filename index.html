@@ -1,116 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="media/images/earth.svg"
+      loading="lazy"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;550;600;650&display=swap"
+      rel="stylesheet"
+    />
+    <title>GREEN WORLD - Earth will not wait</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" type="image/png" href="media/images/earth.svg" loading="lazy" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;550;600;650&display=swap" rel="stylesheet">
-  <title>GREEN WORLD - Earth will not wait</title>
-</head>
-
-<body>
-  <img src="media/images/earth.jpg" alt="" class="earth">
-  <nav>
-    <article>
-      <h2>
-        <a href="index.html" rel="noopener">G<p id="logo__disappear__left">REEN </p>W<img src="media/images/earth.svg" alt="" /><p id="logo__disappear__right">RLD</p>
-        </a>
-      </h2>
-    </article>
-  </nav>
-  <section class="hero">
-    <h1 class="hero__banner">
+  <body>
+    <nav>
       <article>
-        <div class="hero__aligner">
-          <p>Ô nhiễm</p>
-          <p class="typewrite" data-period="300" data-type='[ "Nước", "Đất", "Không khí"]'>
-          </p>
-          <p>Đủ chưa ?</p>
-        </div>
+        <h2>
+          <a href="index.html" rel="noopener"
+            >GREEN W<img src="media/images/earth.svg" alt="" />RLD
+          </a>
+        </h2>
       </article>
-    </h1>
-  </section>
-  <section class="select">
-    <article>
-      <h1>Chuyện gì đã xảy ra ?</h1>
-      <div class="tile">
-        <div class="tile__item water" onclick="show('water')">
-          <h2 class="tile__title">Nước</h2>
-        </div>
-        <div class="tile__item air" onclick="show('air')">
-          <h2 class="tile__title">Không khí</h2>
-        </div>
-        <div class="tile__item soil" onclick="show('soil')">
-          <h2 class="tile__title">Đất</h2>
-        </div>
-      </div>
-    </article>
-  </section>
-  <section class="hidden">
-    <section class="post" id="water_post">
-      <div class="bg" onclick="hide('water')"></div>
-      <button onclick="hide('water')">
-        <img src="media/images/close.svg" alt="" />
-      </button>
-      <div class="article">
-        <div class="post-wrapper" w3-include-html="html/water.html"></div>
-      </div>
-    </section>
-    <section class="post" id="air_post">
-      <div class="bg" onclick="hide('air')"></div>
-      <button onclick="hide('air')">
-        <img src="media/images/close.svg" alt="" />
-      </button>
-      <div class="article">
-        <div class="post-wrapper" w3-include-html="html/air.html"></div>
-      </div>
-    </section>
-    <section class="post" id="soil_post">
-      <div class="bg" onclick="hide('soil')"></div>
-      <button onclick="hide('soil')">
-        <img src="media/images/close.svg" alt="" />
-      </button>
-      <div class="article">
-        <div class="post-wrapper" w3-include-html="html/soil.html"></div>
-      </div>
-    </section>
-  </section>
-  <section class="footer">
-    <article>
-      <div class="footer__about">
-        <h2>Liên hệ</h2>
-        <div class="footer__team">
-          <a href="https://www.facebook.com/prometheux2" target="_blank" rel="noopener">
-            <img onmouseover="names('Nguyễn Huy Hoàng')" onmouseleave="unname()" src="media/images/hoang.jpg" alt="" />
-          </a>
-          <a href="https://www.facebook.com/hungho46" target="_blank" rel="noopener">
-            <img onmouseover="names('Đỗ Hùng Sơn')" onmouseleave="unname()" src="media/images/son.jpg" alt="" />
-          </a>
-          <a href="https://www.facebook.com/quan02u" target="_blank" rel="noopener">
-            <img onmouseover="names('Nguyễn Như Quân')" onmouseleave="unname()" src="media/images/quan.jpg" alt="" />
-          </a>
-          <a href="https://www.facebook.com/thanh.vutrung.520" target="_blank" rel="noopener">
-            <img onmouseover="names('Vũ Trung Thành')" onmouseleave="unname()" src="media/images/thanh.jpg" alt="" />
-          </a>
-          <a href="https://www.facebook.com/levuhieu151" target="_blank" rel="noopener">
-            <img onmouseover="names('Lê Vũ Hiếu')" onmouseleave="unname()" src="media/images/hieu.jpg" alt="" />
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100049430618536" target="_blank" rel="noopener">
-            <img onmouseover="names('Trần Tuấn Long')" onmouseleave="unname()" src="media/images/long.jpg" alt="" />
-          </a>
-        </div>
-        <div id="footer__name"></div>
-      </div>
-      <h1 class="footer__slogan">UNITED WE STAND.</h1>
-    </article>
-  </section>
-  <script src="js/index.js"></script>
-  <script>includeHTML();</script>
-</body>
+    </nav>
 
+    <div class="wrapper">
+      <div class="section parallax">
+        <section class="hero">
+          <h1 class="hero__banner">
+            <article>
+              <div class="hero__aligner">
+                <p>Ô nhiễm</p>
+                <p
+                  class="typewrite"
+                  data-period="250"
+                  data-type='[ "Nước", "Đất", "Không khí"]'
+                ></p>
+                <p>Còn chờ gì nữa ?</p>
+              </div>
+            </article>
+          </h1>
+        </section>
+      </div>
+      <div class="content">
+        <section class="select">
+          <article>
+            <h1>Chuyện gì đã xảy ra ?</h1>
+            <div class="tile">
+              <div class="tile__item water" onclick="show('water')">
+                <h2 class="tile__title">Nước</h2>
+              </div>
+              <div class="tile__item air" onclick="show('air')">
+                <h2 class="tile__title">Không khí</h2>
+              </div>
+              <div class="tile__item soil" onclick="show('soil')">
+                <h2 class="tile__title">Đất</h2>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="footer">
+          <article>
+            <h2>Liên hệ</h2>
+            <div class="footer__team">
+              <a
+                href="https://www.facebook.com/prometheux2"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  onmouseover="names('Nguyễn Huy Hoàng')"
+                  onmouseleave="unname()"
+                  src="media/images/hoang.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/hungho46"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  onmouseover="names('Đỗ Hùng Sơn')"
+                  onmouseleave="unname()"
+                  src="media/images/son.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/quan02u"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  onmouseover="names('Nguyễn Như Quân')"
+                  onmouseleave="unname()"
+                  src="media/images/quan.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/thanh.vutrung.520"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  onmouseover="names('Vũ Trung Thành')"
+                  onmouseleave="unname()"
+                  src="media/images/thanh.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/levuhieu151"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  onmouseover="names('Lê Vũ Hiếu')"
+                  onmouseleave="unname()"
+                  src="media/images/hieu.jpg"
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100049430618536"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  onmouseover="names('Trần Tuấn Long')"
+                  onmouseleave="unname()"
+                  src="media/images/long.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div id="footer__name"></div>
+            <h1 class="footer__slogan">UNITED WE STAND.</h1>
+          </article>
+        </section>
+      </div>
+    </div>
+
+    <section class="hidden">
+      <section class="post" id="water_post">
+        <div class="bg" onclick="hide('water')"></div>
+        <button onclick="hide('water')">
+          <img src="media/images/close.svg" alt="" />
+        </button>
+        <div class="article">
+          <label for="switch"></label>
+          <div class="post-wrapper" w3-include-html="html/water.html"></div>
+        </div>
+      </section>
+      <section class="post" id="air_post">
+        <div class="bg" onclick="hide('air')"></div>
+        <button onclick="hide('air')">
+          <img src="media/images/close.svg" alt="" />
+        </button>
+        <div class="article">
+          <div class="post-wrapper" w3-include-html="html/air.html"></div>
+        </div>
+      </section>
+      <section class="post" id="soil_post">
+        <div class="bg" onclick="hide('soil')"></div>
+        <button onclick="hide('soil')">
+          <img src="media/images/close.svg" alt="" />
+        </button>
+        <div class="article">
+          <div class="post-wrapper" w3-include-html="html/soil.html"></div>
+        </div>
+      </section>
+    </section>
+
+    <script src="js/index.js"></script>
+    <script>
+      includeHTML();
+    </script>
+  </body>
 </html>
