@@ -303,8 +303,8 @@ nav h2 img {
   border: 1px solid black;
   background: #fff;
   border-radius: 50%;
-  position: -webkit-sticky;
   position: sticky;
+  position: -webkit-sticky;
   cursor: pointer;
   height: 16px;
   width: 16px;
