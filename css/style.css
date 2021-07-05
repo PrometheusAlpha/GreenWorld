@@ -156,7 +156,7 @@ nav h2 img {
   height: 50%;
   background: url(../media/images/mountain.png);
   background-size: cover;
-  background-position: bottom 0;
+  background-position: center;
 }
 
 .hero {
@@ -175,7 +175,7 @@ nav h2 img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 10vh;
+  padding-bottom: 25vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -422,6 +422,9 @@ nav h2 img {
 }
 
 @media (max-width: 1000px) {
+  .content::before {
+    height: 25%;
+  }
   .tile {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
