@@ -1,37 +1,11 @@
-@media (max-width: 1000px)
-  .masonry
-    column-count: 3
-  .content::before
-    // height: 25vh
-  .tile
-    flex-direction: column
-    align-items: center
-  .tile__item
-    width: 40vh
-    height: 60vh
-    filter: saturate(1)
-    &:hover
-      transform: none
-  .tile__item:not(:first-child)
-    margin-left: 0 !important
-    margin-top: 5vh
 @media (max-width: 740px)
   .masonry
     column-count: 2
   nav
     background: #000
-  .footer
-    &__about
-      right: 0
-    img
-      filter: saturate(1)
   #footer__name
     display: none
-@media (max-width: 500px)
-  .select
-    h1
-      text-align: center
-
+@media (max-width: 600px)
   .article
     width: 100vw
     margin: 0
@@ -41,7 +15,6 @@
     button
       top: -9vh
       left: 10px
-
   .footer
     &__slogan
       font-size: 2rem
