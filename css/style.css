@@ -250,8 +250,8 @@ nav h2 img {
 }
 
 .post button {
-  -webkit-transform: scale(2) translateY(10vh);
-          transform: scale(2) translateY(10vh);
+  -webkit-transform: scale(2);
+          transform: scale(2);
   border: 1px solid black;
   background: #fff;
   border-radius: 50%;
@@ -263,7 +263,7 @@ nav h2 img {
   width: 16px;
   left: 19vw;
   padding: 0;
-  top: 0;
+  top: 20vh;
 }
 
 .post button img {
@@ -294,7 +294,7 @@ nav h2 img {
 
 .article {
   width: 70vw;
-  min-height: 100vh;
+  min-height: 110vh;
   background: #fff;
   border-radius: 18px;
   margin: 10vh 15vw 10vh 15vw;
@@ -381,12 +381,10 @@ nav h2 img {
 @media (max-width: 600px) {
   .article {
     width: 100vw;
-    margin: 0;
-    margin-top: -2rem;
+    margin: -2rem 0 0 0;
     border-radius: 0;
   }
   .post button {
-    top: -9vh;
     left: 10px;
   }
   .footer__slogan {

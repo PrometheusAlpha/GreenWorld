@@ -1,13 +1,11 @@
-@mixin fullsize
-  top: 0
-  left: 0
-  right: 0
-  bottom: 0
 .post
   z-index: 9
   display: none
   position: fixed
-  @include fullsize
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
   backdrop-filter: blur(10px)
   -ms-overflow-style: none
   scrollbar-width: none
@@ -15,7 +13,7 @@
   &::-webkit-scrollbar
     display: none
   button
-    transform: scale(2) translateY(10vh)
+    transform: scale(2)
     border: 1px solid black
     background: #fff
     border-radius: 50%
@@ -27,7 +25,7 @@
     width: 16px
     left: 19vw
     padding: 0
-    top: 0
+    top: 20vh
     img
       position: absolute
       left: -1px
@@ -47,7 +45,7 @@
 
 .article
   width: 70vw
-  min-height: 100vh
+  min-height: 110vh
   background: #fff
   border-radius: 18px
   margin: 10vh 15vw 10vh 15vw
