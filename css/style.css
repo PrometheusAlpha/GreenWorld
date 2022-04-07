@@ -130,8 +130,8 @@ nav h2 img {
   right: 0;
   bottom: 0;
   left: 0;
-  -webkit-transform: translateZ(-1px) scale(2);
-          transform: translateZ(-1px) scale(2);
+  -webkit-transform: translateZ(-1px) scale(1);
+          transform: translateZ(-1px) scale(1);
   background-size: 100%;
   z-index: -1;
   background: url(../media/images/sunset.jpg);
@@ -158,8 +158,8 @@ nav h2 img {
 }
 
 .hero {
-  -webkit-transform: translateZ(-1px) scale(2);
-          transform: translateZ(-1px) scale(2);
+  -webkit-transform: translateZ(-10px) scale(2);
+          transform: translateZ(-10px) scale(2);
   width: 100%;
 }
 
